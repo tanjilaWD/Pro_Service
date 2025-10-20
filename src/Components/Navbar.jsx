@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { X } from 'lucide-react';
 import { Menu } from 'lucide-react';
+
 const navItems =[
     {name:'Home', href:'#'},
     {name:'About', href:'#about'},
@@ -16,7 +17,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 py-3 md:py-4 flex items-center justify-between">
             {/* logo */}
             <div className="flex items-center text-xl sm:text-2xl font-bold text-gray-900">
-                <div className="w-10 h-10 sm:h-10 flex items-center justify-center rounded-full border-3 sm:border-4 border-pink-600 text-pink-600 mr-4 p-2">
+                <div className="w-10 h-10 sm:h-10 sm:w-10 flex items-center justify-center rounded-full border-3 sm:border-4 border-pink-600 text-pink-600 mr-4 p-2">
                    p
                 </div>
                 <span>
@@ -27,7 +28,7 @@ const Navbar = () => {
             </div>
         
         {/* links */}
-        <ul className="hidden md:flex items-center gap-6 lg:gap-8 text-gray-700 font-medium">
+        <ul className="hidden md:flex items-center gap-6 lg:gap-8 text-gray-700 font-bold">
             {navItems.map(({name, href})=>(
                 <li key={name}>
                     <a href={href} 
@@ -62,6 +63,28 @@ const Navbar = () => {
     
        {isMenuOpen && (
         <div className="md:hidden bg-white shadow-lg  border-t border-gray-200">
+            <div className="px-4 py-3 space-y-3">
+                {navItems.map(({name,href})=> (
+                  <a key={name} href={href} className="block py-2 px-4 text-gray-700 hover:bg-gray-100 rounded-lg hover:text-green-500 transition-colors" 
+                   onClick={() => setMenuOpen(false)}
+                   >
+                     {name}
+                  </a>
+                ))}
+                <div className="pt-2"> 
+                    <button className="w-full py-2 rounded-lg bg-pink-500 text-white font-medium hover:bg-pink-600 transition-colors">
+                        Get Started
+
+                    </button>
+                    
+
+                </div>
+                
+                
+                
+                
+
+            </div>
 
         </div>
        )}

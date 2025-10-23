@@ -8,14 +8,14 @@ const navItems = [
   { name: "Company", href: "#company" },
   { name: "Services", href: "#services" },
   { name: "Contact", href: "#contact" },
-];
+]
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="fixed w-full bg-gray-50 top-0 left-0 right-0 z-50 shadow-md">
+    <nav className="fixed w-full bg-gray-50 top-0 left-0 right-0 z-40 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 py-3 md:py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center text-xl sm:text-2xl font-bold text-gray-900">

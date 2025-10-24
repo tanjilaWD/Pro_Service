@@ -1,4 +1,4 @@
-
+import { LuUsers } from "react-icons/lu";
 
 const About = () => {
     return (
@@ -12,14 +12,65 @@ const About = () => {
     <div className="w-full max-w-md mx-auto lg:max-w-lg xl:max-w-xl 
       aspect-[4/3] overflow-hidden shadow-lg md:shadow-xl relative z-10 
       -rotate-2 rounded-[40%_60%_70%_30%/40%_50%_60%_60%] hover:rotate-0 
-      transition-transform duration-700">
+      transition-transform duration-700" 
+       data-aos = 'fade-right'
+        data-aos-dealy= '200'
+      >
+       
       <img
         src="/image/about.png"
         alt="About"
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
       />
     </div>
+    <div className="hidden md:block absolute border-2 border-pink-500 -bottom-4 -right-4 size-16 md:size-20 lg:w-24 lg:h-20 rounded-full z-0"
+  data-aos = 'zoom-in'
+  data-aos-dealy= '500'
+  ></div>
   </div>
+   <div className="hidden md:block absolute border-2 border-pink-500 -top-4 -left-4 size-16 md:size-20 lg:w-24 lg:h-20 rounded-full z-0"
+  data-aos = 'zoom-in'
+  data-aos-dealy= '600'
+  ></div>
+  <div className="flex-1 w-full max-w-2xl mx-auto lg:max-0 space-y-6 md:space-y-8 relative z-20 order-1 lg:order-2">
+<div className="mb-6 md:mb-8" data-aos='fade-left'>
+  <h2 className="text-3xl sm:text-4xl md:text-5xl text-gray-900 text-center lg:text-left">
+    Agency {" "}
+    <span className="font-bold text-black block lg:inline">Overview <span className="text-green-500">.</span>
+</span>
+</h2>
+<div className="flex gap-3 mt-4 justify-center lg:justify-start">
+   <span className="w-5 h-5 rounded-full border-2 border-pink-500"></span>
+   <span className="w-5 h-5 rounded-full border-2 border-yellow-500"></span>
+   <span className="w-5 h-5 rounded-full border-2 border-green-500"></span>
+</div>
+</div>
+<p className="text-base sm:text-lg text-gray-700 leading-relaxed text-center lg:text-left" 
+data-aos = 'fade-left'
+data-aos-dealy = '100'
+>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, tempora! Ipsam, delectus at, nulla quod dolorum voluptates enim similique rerum corporis laudantium illo magnam! Assumenda, odit. Adipisci accusamus in excepturi.
+</p>
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 md:mt-10"
+data-aos = 'fade-up'
+data-aos-dealy = '200'
+>
+ <div className="bg-white p-4 md:p-6 rounded-xl md:rounded-2xl border border-gray-100 shadow-md md:shadow-lg transition-all hover:shadow-xl">
+  <div className="size-10 md:size-12 flex items-center justify-center rounded-lg bg-pink-100 mb-3 md:mb-4">
+<LuUsers className="text-base md:text-lg font-semibold text-gray-800 mb-2"/>
+</div>
+<h3 className="text-base md:text-lg font-semibold text-gray-800 mb-2">
+  Export Team
+</h3>
+<p className="text-gray-600 text-xs md:text-sm">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+</p>
+</div> 
+<div className="">
+
+</div>
+</div>
+</div>
 </section>
 
     );

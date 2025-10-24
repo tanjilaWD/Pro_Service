@@ -1,4 +1,4 @@
-// Navbar.jsx
+
 import { useState } from "react";
 import { X, Menu } from "lucide-react";
 
@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full bg-gray-50 top-0 left-0 right-0 z-20 shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 py-3 md:py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 py-3 md:py-4 flex items-center justify-between ">
         {/* Logo */}
         <div className="flex items-center text-xl sm:text-2xl font-bold text-gray-900">
           <div className="w-10 h-10 flex items-center justify-center rounded-full border-4 border-pink-600 text-pink-600 mr-4 p-2">

@@ -5,6 +5,7 @@ import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
 import WhyOurCompany from "./Components/WhyOurCompany";
+import Service from "./Components/Service";
 
 
 
@@ -23,6 +24,7 @@ const App = () => {
       <Hero/>
       <About/>
       <WhyOurCompany/>
+      <Service/>
     </div>
   );
 };

@@ -25,15 +25,9 @@ const About = () => {
         className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
       />
     </div>
-    {/* <div className="hidden md:block absolute border-2 border-pink-500 -bottom-4 -right-4 size-16 md:size-20 lg:w-24 lg:h-20 rounded-full z-0"
-  data-aos = 'zoom-in'
-  data-aos-dealy= '500'
-  ></div> */}
+  
   </div>
-   {/* <div className="hidden md:block absolute border-2 border-pink-500 -top-4 -left-4 size-16 md:size-20 lg:w-24 lg:h-20 rounded-full z-0"
-  data-aos = 'zoom-in'
-  data-aos-dealy= '600'
-  ></div> */}
+   
   <div className="flex-1 w-full max-w-2xl mx-auto lg:max-0 space-y-6 md:space-y-8 relative z-20 order-1 lg:order-2">
 <div className="mb-6 md:mb-8" data-aos='fade-left'>
   <h2 className="text-3xl sm:text-4xl md:text-5xl text-gray-900 text-center lg:text-left">

@@ -4,6 +4,7 @@ import 'aos/dist/aos.css'
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
+import WhyOurCompany from "./Components/WhyOurCompany";
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <About/>
+      <WhyOurCompany/>
     </div>
   );
 };

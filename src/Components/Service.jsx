@@ -90,9 +90,15 @@ data-aos-delay= '200'>
          <div className="flex items-center gap-3 sm:gap-4 sm:mb-6"
          data-aos = 'fade-right'
          data-aos-delay = '300'>
-            <div>
-                
+        <div className={`size-12 sm:h-16 rounded-lg sm:rounded-xl flex items-center justify-center ${ser.color} bg-opacity-10`}>
+          <div className={ser.iconColor}>
+            {ser.icon}
+        </div>
             </div>
+        <h3 className="text-2xl sm:text-3xl font-bold text-gray-800">
+            {ser.title}
+            
+            </h3>    
             
         </div>   
         </div>    

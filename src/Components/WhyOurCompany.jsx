@@ -4,7 +4,7 @@ import { GoZap } from "react-icons/go";
 
 const WhyOurCompany = () => {
     return (
-        <section id="company" className="relative scroll-m-6 overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50 py-12 sm:py-16 md:py-12 lg:px-20">
+        <section id="company" className="relative scroll-m-6 overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50 py-12 sm:py-16 md:py-12 lg:px-20 pb-10">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-6 md:mb-8" data-aos = 'fade-down'>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl text-gray-900">
@@ -19,7 +19,7 @@ const WhyOurCompany = () => {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center text-white">
                <div className="relative w-full flex justify-center order-2 lg:order-1">
-                <div className="w-full max-w-md lg:max-w-lg xl:max-w-xl h-[560px] md:h-[500] lg:h-[520px] overflow-hidden bg-gray-50 shadow-lg md:shadow-xl absolute top-0 z-0 rounded-[15%_10%_20%_70%/60%_30%_70%_30%]"
+                <div className="w-full max-w-md lg:max-w-lg xl:max-w-xl h-[430px] md:h-[480px] lg:h-[500px] overflow-hidden bg-gray-50 shadow-lg md:shadow-xl absolute top-0 z-0 rounded-[15%_10%_20%_70%/60%_30%_70%_30%]"
                 data-aos = 'fade-right'
                 data-aos-delay = '100'
                 >

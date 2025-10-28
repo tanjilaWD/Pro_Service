@@ -2,6 +2,8 @@ import { useState } from "react";
 import { FaPaintBrush } from "react-icons/fa";
 import { FaCode } from "react-icons/fa6";
 import { CiCamera } from "react-icons/ci";
+import { IoCheckmarkCircleOutline } from "react-icons/io5";
+import { FaArrowRight } from "react-icons/fa6";
 const Service = () => {
     const [activeService, setActiveService] = useState(1);
     const service = [
@@ -9,7 +11,7 @@ const Service = () => {
          id:1,
          icon:  <FaPaintBrush className="size-5 sm:size-6"/>,
          title: 'UI/UX Design',
-         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur, consequuntur maiores repellendus amet quae ",
+         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur, consequuntur maiores repellendus amet quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur, consequuntur maiores repellendus amet quae ",
          features: ['User Research', 'Wireframing', 'Prototyping', 'UI Design'] ,
          color: 'bg-pink-400',
          butColor: 'bg-pink-400 hover:bg-pink-500',
@@ -20,7 +22,7 @@ const Service = () => {
          id:2,
          icon:  <FaCode className="size-5 sm:size-6"/>,
          title: 'Web Development',
-         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur, consequuntur maiores repellendus amet quae ",
+         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur, consequuntur maiores repellendus amet quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur, consequuntur maiores repellendus amet quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur, consequuntur maiores repellendus amet quae ",
          features: ['User Research', 'Wireframing', 'Prototyping', 'UI Design'] ,
          color: 'bg-yellow-400',
          butColor: 'bg-yellow-400 hover:bg-yellow-500',
@@ -31,7 +33,7 @@ const Service = () => {
          id:3,
          icon:  <CiCamera className="size-5 sm:size-6"/>,
          title: 'Photography',
-         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur, consequuntur maiores repellendus amet quae ",
+         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur, consequuntur maiores repellendus amet quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur, consequuntur maiores repellendus amet quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur, consequuntur maiores repellendus amet quaeLorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur, consequuntur maiores repellendus amet quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur, consequuntur maiores repellendus amet quae ",
          features: ['User Research', 'Wireframing', 'Prototyping', 'UI Design'] ,
          color: 'bg-green-400',
          butColor: 'bg-green-400 hover:bg-green-500',
@@ -40,7 +42,7 @@ const Service = () => {
         }
     ]
     return (
-        <section id="service" className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-green-50 py-12 px-4 sm:py-16 md:px-12 lg:px-20">
+        <section id="service" className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-green-50 py-12 px-4 sm:py-16 md:px-12 lg:px-20 ">
          <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-center text-center mb-6"
         data-aos = 'fade-down'>
@@ -97,16 +99,59 @@ data-aos-delay= '200'>
             </div>
         <h3 className="text-2xl sm:text-3xl font-bold text-gray-800">
             {ser.title}
-            
-            </h3>    
-            
-        </div>   
-        </div>    
-
+        </h3>    
         </div>
+        <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6 leading-relaxed "
+        data-aos = 'fade-right'
+        data-aos-delay= '350'
+        >
+           {ser.desc} 
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8"
+        data-aos = 'fade-up'
+        data-aos-delay = '400'>
+            {ser.features.map((feature, idx) =>(
+                <div key={idx}
+                className="flex items-center gap-2"
+                data-aos = 'fade-up'
+                data-aos-delay = {450 + (idx * 50)}>
+                <IoCheckmarkCircleOutline  className="size-4 sm:size-5 text-green-500 flex-shrink-0"/>
+                <span className="text-gray-700 text-sm sm:text-base">
+                    {feature}
+                </span>
+            </div>
+            ))}
+        </div>
+        <div className="flex justify-center lg:justify-start"
+        data-aos = 'fade-up'
+        data-aos-delay = '600'>
+         <button className={`px-6 py-3 sm:px-8 ${ser.butColor} font-medium transition-all shadow-md hover:shadow-lg flex items-center gap-2 text-sm sm:text-base text-white rounded-full`}>
+            Get This Service
+        <FaArrowRight className="size-4 sm:size-5"/>
+        </button>   
+        </div> 
+      </div> 
+      <div className="fkex-1 mt-6 lg:mt-0"
+      data-aos = 'zoom-in'
+      data-aos-delay = '500'>
+        <div className="w-full h-60 sm:72 md:h-80 overflow-hidden shadow-lg rounded-xl md:rounded-2xl">
+            <img src={ser.image} alt={ser.title} 
+            className="object-cover w-full transform duration-700"/>
+        </div>
+    </div>   
+</div>
     ))}
 </div>  
-        </div>   
+   </div>
+    <div className="hidden md:block absolute border-2 border-pink-500 bottom-20 left-10 size-16 sm:size-20 md:size-24 rounded-full opacity-50"
+    data-aos = 'zoom-in'
+    data-aos-delay = '700'>
+   </div>
+    <div className="hidden md:block absolute border-2 border-green-500 top-40 right-10 size-20 sm:size-24 md:size-32 rounded-full opacity-50"
+    data-aos = 'zoom-in'
+    data-aos-delay = '700'>
+   </div>
 
         </section>
     );

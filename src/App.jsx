@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar";
 import About from "./Components/About";
 import WhyOurCompany from "./Components/WhyOurCompany";
 import Service from "./Components/Service";
+import Contact from "./Components/Contact";
 
 
 
@@ -25,6 +26,7 @@ const App = () => {
       <About/>
       <WhyOurCompany/>
       <Service/>
+      <Contact/>
     </div>
   );
 };

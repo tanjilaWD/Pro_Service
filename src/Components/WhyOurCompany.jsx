@@ -32,7 +32,7 @@ const WhyOurCompany = () => {
           {/* Left Side (Text & Icons) */}
           <div className="relative w-full flex justify-center order-2 lg:order-1">
             <div
-              className="w-full max-w-[340px] xs:max-w-md lg:max-w-lg xl:max-w-xl h-[380px] xs:h-[430px] md:h-[480px] lg:h-[500px] overflow-hidden bg-gray-50 shadow-md md:shadow-xl absolute top-0 z-0 rounded-[15%_10%_20%_70%/60%_30%_70%_30%]"
+              className="w-full max-w-[340px] xs:max-w-md lg:max-w-lg xl:max-w-xl h-[380px] xs:h-[400px] md:h-[480px] lg:h-[500px] overflow-hidden bg-gray-50 shadow-md md:shadow-xl absolute top-0 z-0 rounded-[15%_10%_20%_70%/60%_30%_70%_30%]"
               data-aos="fade-right"
               data-aos-delay="100"
             ></div>

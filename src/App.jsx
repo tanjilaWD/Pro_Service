@@ -7,6 +7,7 @@ import About from "./Components/About";
 import WhyOurCompany from "./Components/WhyOurCompany";
 import Service from "./Components/Service";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 
 
@@ -27,6 +28,7 @@ const App = () => {
       <WhyOurCompany/>
       <Service/>
       <Contact/>
+      <Footer/>
     </div>
   );
 };
